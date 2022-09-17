@@ -6,6 +6,7 @@
 }
 body{
     font-family:'PT Sans', sans-serif;
+    height: 5000px;
 }
 :root{
     --maincolor: #7b5244;
@@ -343,4 +344,115 @@ header .header-content{
     background: var(--maincolor);
     margin-left: 10px;
 }
+/*sprites*/
+.sprites{
+    display: flex;
+    margin-bottom: 55px;
+}
+.sprites-item{
+    flex: 1;
+    text-align: center;
+    border-right:1px solid var(--maincolor) ;
+}
+.sprites-item:last-child{
+    border: 0;
+}
+.sprite-info h3{
+    font-size: 17px;
+}
+.sprite-info span{
+    color: gray;
+    font-size: 15px; 
+}
+.sprite-icon{
+    background-image: url(../images/service-icon.png);
+    height: 60px;
+    background-repeat: no-repeat;
+}
+.sprite-icon-1{
+    background-position: center 5px;
+    transition: 0.5s;
+}
+.sprites-item:hover .sprite-icon-1{
+    background-position: center -86px;
+}
+.sprite-icon-2{
+    background-position: center -180px;
+    transition: 0.5s;
+}
+.sprites-item:hover .sprite-icon-2{
+    background-position: center -273px;
+}
+.sprite-icon-3{
+    background-position: center -366px;
+    transition: 0.5s;
+}
+.sprites-item:hover .sprite-icon-3{
+    background-position: center -455px;
+}
+.sprite-icon-4{ 
+    background-position: center -549px;
+    transition: 0.5s;
+}
+.sprites-item:hover .sprite-icon-4{
+    background-position: center -639px;
+}
+.sprite-icon-5{
+    background-position: center -734px;
+    transition: 0.5s;
+}
+.sprites-item:hover .sprite-icon-5{
+    background-position: center -826px;
+}
+/*product*/
+.product{
+    
+}
+.product ul{
+    display: flex;
+    justify-content: center;
+}
+.product .product-title li{
+    margin: 10px 20px;
+}
+.product-img{
+    position: relative;
+}
 
+.product-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: transform 0.5s,opacity 0.3s;
+    
+}
+.product-items{
+    display: flex;
+}
+.product-item{
+    flex: 1;
+}
+.product-item:hover .product-overlay {
+    transform: scaleX(1);
+    opacity: 1;
+}
+.product-overlay ul{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.product-overlay ul li{
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor);
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}
+.product-overlay ul li i{
+    color: #fff;
+    line-height: 40px;
+}
