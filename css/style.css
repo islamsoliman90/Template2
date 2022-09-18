@@ -298,7 +298,6 @@ header .header-content{
 	box-sizing: border-box;
 }
 .discount-item img{
-    max-width:100%;
     position: absolute;
     vertical-align: top;
     top: 0px;
@@ -331,13 +330,13 @@ header .header-content{
     margin: 0 20px;
 
 }
-.discount-desc .bolletes{
+.bolletes{
     text-align: right;
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
-.discount-desc .bolletes span{
+.bolletes span{
     display: inline-block;
     width: 50px;
     height: 3px;
@@ -347,7 +346,7 @@ header .header-content{
 /*sprites*/
 .sprites{
     display: flex;
-    margin-bottom: 55px;
+    margin: 55px;
 }
 .sprites-item{
     flex: 1;
@@ -430,13 +429,15 @@ header .header-content{
 }
 .product-items{
     display: flex;
+    justify-content:space-around;
 }
 .product-item{
     flex: 1;
+    
 }
 .product-item:hover .product-overlay {
     transform: scaleX(1);
-    opacity: 1;
+    opacity: 0.9;
 }
 .product-overlay ul{
     position: absolute;
@@ -455,4 +456,67 @@ header .header-content{
 .product-overlay ul li i{
     color: #fff;
     line-height: 40px;
+}
+.product-info i{
+    margin: 10px 0;
+}
+.product-info .active{
+    color: yellow; 
+}
+.product-info span{
+    display: block;
+    margin: 1px 0;
+}
+/* details */
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+.details .details-img {
+    position: relative;
+    margin-right: 30px;
+}
+.details-img-overlay{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.details-desc{
+    background-color: #f7f3ef;
+    position: relative;
+}
+.details-desc .details-title{
+    margin: 50px 0px 0px 110px;
+    margin-bottom: 26px;
+    text-transform: capitalize;
+}
+.details-desc .top{
+    position: relative;
+}
+.details-desc .date{
+    position: absolute;
+    top: -9px;
+    left: 41px;
+    color: var(--maincolor);
+    text-transform: capitalize;
+}
+.details-desc .date .icon{
+    font-size: xx-large;
+}
+.details-desc p {
+    margin-left: 41px;
+    margin-top: 30px;
+    color: var(--maingray);
+    font-size: 18px;
+}
+/*section client*/
+.client{
+    display: flex;
+    justify-content: space-around;
+}
+/*footer*/
+.footer{
+    height: 50vh;
+    background-color: #333;
 }
