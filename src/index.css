@@ -10,6 +10,7 @@ body {
 /* navbar */
 .linknav {
   position: relative;
+  font-size: 18px;
 }
 .linknav::after,
 .linknav::before {
@@ -46,4 +47,16 @@ body {
 .nav .linknav:hover::after {
   transform: scale3d(1, 1, 1);
   transition-delay: 0.3s;
+}
+
+/* Head sections */
+.section-header .line-section {
+  width: 80px;
+  height: 5px;
+
+  background-color: var(--maincolor);
+  transition: width 0.5s;
+}
+.section-header:hover .line-section {
+  width: 120px;
 }
