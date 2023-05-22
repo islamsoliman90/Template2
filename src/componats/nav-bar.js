@@ -27,7 +27,7 @@ export default function navbar() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  Navbar Expand
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
