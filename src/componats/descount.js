@@ -4,7 +4,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 function descount() {
   return (
     <div class="descount d-flex flex-lg-row flex-column ">
-      <div class="discount-desc position-relative p-3  flex-grow-1 w-lg-50 w-100">
+      <div class="discount-desc position-relative p-3 p-lg-0  flex-grow-1 w-lg-50 w-100">
         <div class="top ps-5 position-relative">
           <FaQuoteLeft className="icon position-absolute start-0 top-0 fs-1 " />
           <h2 class="discount-title ps-3">penelope</h2>

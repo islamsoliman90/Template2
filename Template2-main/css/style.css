@@ -388,14 +388,8 @@ header {
   background-position: center -826px;
 }
 /*product*/
-.product {
-}
-.product ul {
-  display: flex;
-  justify-content: center;
-}
-.product .product-title li {
-  margin: 10px 20px;
+.product-item {
+  height: 500px !important;
 }
 .product-img {
   position: relative;

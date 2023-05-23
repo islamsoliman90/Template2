@@ -4,6 +4,7 @@ import Item from "./componats/item";
 import Dotted from "./componats/dotted";
 import Descount from "./componats/descount";
 import Sprites from "./componats/sprites";
+import Product from "./componats/product";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         <SectionHeader title="descount section" />
         <Descount />
         <Sprites />
+        <hr />
+        <SectionHeader title="Product Section" />
+        <Product />
       </div>
     </>
   );
