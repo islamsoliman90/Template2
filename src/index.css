@@ -1,6 +1,6 @@
 body {
   font-family: "PT Sans", sans-serif;
-  height: 5000px;
+  height: 100vh;
 }
 :root {
   --maincolor: #7b5244;
@@ -197,55 +197,68 @@ body {
 .product .product-title li {
   margin: 10px 20px;
 }
-.product-img {
-  position: relative;
-}
 
 .product-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   transform: scaleX(0);
   opacity: 0;
   transition: transform 0.5s, opacity 0.3s;
 }
-.product-items {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.product-item {
-  width: 30%;
-}
+
 .product-item:hover .product-overlay {
   transform: scaleX(1);
   opacity: 0.9;
 }
 .product-overlay ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 .product-overlay ul li {
-  width: 40px;
-  height: 40px;
   background-color: var(--maincolor);
   display: inline-block;
-  margin-left: 10px;
-  text-align: center;
 }
 .product-overlay ul li i {
   color: #fff;
   line-height: 40px;
 }
-.product-info i {
-  margin: 10px 0;
-}
-.product-info .active {
+.starContainer .active {
   color: yellow;
 }
-.product-info span {
+/* Details */
+.details-img .img {
   display: block;
-  margin: 1px 0;
+  height: 100%;
+}
+.details-img-overlay {
+  transform: translate(-50%, -50%);
+}
+.details-desc {
+  background-color: #f7f3ef;
+}
+.details-desc .details-title {
+  text-transform: capitalize;
+  font-size: 4vh;
+}
+.details-subtitle {
+  font-size: 4vh;
+}
+.details-desc .date {
+  color: var(--maincolor);
+  text-transform: capitalize;
+  font-size: 3vh;
+}
+.details-desc .date .icon {
+  font-size: 5vh;
+}
+.details-desc p {
+  color: var(--maingray);
+  font-size: 4vh;
+}
+/*section client*/
+.client {
+  display: flex;
+  justify-content: space-around;
+}
+/*footer*/
+.footer {
+  color: #d0cdcd;
+  background-color: #333;
 }
