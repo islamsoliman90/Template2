@@ -4,7 +4,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 function descount() {
   return (
     <div className="descount d-flex flex-lg-row flex-column ">
-      <div className="discount-desc position-relative p-3 p-lg-0  flex-grow-1 w-lg-50 w-100">
+      <div className="discount-desc position-relative p-3 p-lg-3  flex-grow-1 w-lg-50 w-100">
         <div className="top ps-5 position-relative">
           <FaQuoteLeft className="icon position-absolute start-0 top-0 fs-1 " />
           <h2 v="discount-title ps-3">penelope</h2>
@@ -23,7 +23,7 @@ function descount() {
           <span className="d-inline-block  ms-3"></span>
         </div>
       </div>
-      <div className="w-lg-50 w-100  d-flex  pt-lg-0 pt-3 ps-lg-3 h-100">
+      <div className="dec-img w-lg-50 w-100  d-flex  p-lg-3 pt-3 ps-lg-3 h-100">
         <div className="discount-item w-50 me-3  position-relative overflow-hidden ">
           <img
             src="images/category-banner1.jpg"

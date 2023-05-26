@@ -29,7 +29,6 @@ export default function product() {
           </Row>
         </Container>
       </div>
-      <div className="product-items padding-y"></div>
     </div>
   );
 }

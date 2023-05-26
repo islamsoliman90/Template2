@@ -1,0 +1,46 @@
+/* descount */
+.discount-desc {
+  background-color: #f7f3ef;
+  & .top .icon {
+    color: var(--maincolor);
+  }
+}
+
+.bolletes {
+  & span {
+    width: 50px;
+    height: 3px;
+    background: var(--maincolor);
+  }
+}
+.dec-img {
+  background-color: #f7f3ef;
+  .discount-item {
+    border: 1px solid #333;
+    height: 350px;
+    z-index: 2;
+    & img {
+      vertical-align: top;
+      transition: transform 0.5s;
+    }
+    &:hover {
+      & img {
+        transform: scale(1.3);
+      }
+    }
+    &:hover {
+      & .discount-info h3 {
+        color: var(--subcolor);
+        font-weight: 500;
+        text-shadow: 1px 1px 2px var(--maingray);
+      }
+    }
+    & .discount-info {
+      color: var(--maincolor);
+      transition: 5s;
+      & h3 {
+        transition: color 0.5s;
+      }
+    }
+  }
+}

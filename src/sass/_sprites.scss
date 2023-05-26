@@ -1,0 +1,52 @@
+.sprites-item {
+  border-right: 1px solid var(--maincolor);
+  & .sprite-info {
+    & span {
+      color: gray;
+    }
+    & h3 {
+      font-size: 17px;
+    }
+  }
+  & .sprite-icon {
+    background-image: url(../../public/images/service-icon.png);
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  .sprite-icon-1 {
+    background-position: center 5px;
+    transition: 0.5s;
+  }
+  &:hover .sprite-icon-1 {
+    background-position: center -86px;
+  }
+  .sprite-icon-2 {
+    background-position: center -180px;
+    transition: 0.5s;
+  }
+  &:hover .sprite-icon-2 {
+    background-position: center -273px;
+  }
+  .sprite-icon-3 {
+    background-position: center -366px;
+    transition: 0.5s;
+  }
+  &:hover .sprite-icon-3 {
+    background-position: center -455px;
+  }
+  .sprite-icon-4 {
+    background-position: center -549px;
+    transition: 0.5s;
+  }
+  &:hover .sprite-icon-4 {
+    background-position: center -639px;
+  }
+  .sprite-icon-5 {
+    background-position: center -734px;
+    transition: 0.5s;
+  }
+  &:hover .sprite-icon-5 {
+    background-position: center -826px;
+  }
+}

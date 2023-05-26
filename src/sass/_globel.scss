@@ -1,0 +1,21 @@
+:root {
+  --maincolor: #7b5244;
+  --subcolor: #333333;
+  --maingray: #f7f3ef;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  height: 100vh;
+}
+/* Head sections */
+.section-header {
+  &.line-section {
+    width: 80px;
+    height: 5px;
+    background-color: var(--maincolor);
+    transition: width 0.5s;
+  }
+  &:hover .line-section {
+    width: 120px;
+  }
+}

@@ -1,0 +1,44 @@
+/* items */
+.cate-subtitle {
+  color: var(--maingray);
+  font-size: 15px;
+}
+.cate-title {
+  font-size: medium;
+}
+.cateagory-item {
+  position: relative;
+  & .icon {
+    background-color: var(--maincolor);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+  }
+  &:hover .icon {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* dotted */
+.dotted-section {
+  & span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--maincolor);
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}

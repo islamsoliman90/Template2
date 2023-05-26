@@ -19,14 +19,14 @@ export default function details() {
               />
             </div>
           </Col>
-          <Col lg={8}>
+          <Col lg={8} className="desc-content">
             <div class="details-desc py-1 w-100 position-relative">
               <div class="top position-relative ">
-                <div class="date position-absolute start-0 ps-3 ">
+                <div class="date position-absolute start-0 ps-3 d-none d-md-block ">
                   <h1 class="icon ">28</h1>
                   <span class="details-subtitle">february 2018</span>
                 </div>
-                <h2 class="details-title  p-3 m-3 text-end  text-lg-cnter  ">
+                <h2 class="details-title  p-3 m-3 text-center text-md-end   text-lg-cnter  ">
                   Discounts are reductions to a basic price
                 </h2>
               </div>
