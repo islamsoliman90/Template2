@@ -1,14 +1,14 @@
 .sprites-item {
   border-right: 1px solid var(--maincolor);
-  & .sprite-info {
+  .sprite-info {
     & span {
       color: gray;
     }
-    & h3 {
+    h3 {
       font-size: 17px;
     }
   }
-  & .sprite-icon {
+  .sprite-icon {
     background-image: url(../../public/images/service-icon.png);
     height: 60px;
     background-repeat: no-repeat;
